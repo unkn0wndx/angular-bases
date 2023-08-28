@@ -1,0 +1,14 @@
+<h1 class="text-2xl font-bold">DBZ Personajes</h1>
+<hr>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+  <div>
+    <app-dbz-list (onDelete)="onDeleteCharacter($event)" [characterList]="characters"></app-dbz-list>
+  </div>
+
+  <div>
+    <app-add-character (onNewCharacter)="onNewCharacter($event)"></app-add-character>
+  </div>
+
+</div>
